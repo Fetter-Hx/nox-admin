@@ -1,0 +1,35 @@
+{
+  "name": "@nox/eslint-config",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "stub": "pnpm unbuild --stub"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/eslint": "9.6.1",
+    "@typescript-eslint/eslint-plugin": "8.4.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-command": "0.2.4",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.23.0",
+    "globals": "^15.9.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "typescript-eslint": "^8.4.0",
+    "vue-eslint-parser": "^9.4.3"
+  }
+}
