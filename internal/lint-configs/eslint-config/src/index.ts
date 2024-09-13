@@ -1,5 +1,14 @@
 import type { Linter } from 'eslint'
-import { command, prettier, typescript, ignores } from './configs'
+import {
+  command,
+  prettier,
+  typescript,
+  ignores,
+  importEslintConfig,
+  vue,
+  javasript,
+  jsonc
+} from './configs'
 
 /**
  * eslint配置对象的类型
@@ -16,7 +25,17 @@ type FlatConfigPromie = FlatConfig | FlatConfig[] | Promise<FlatConfig | FlatCon
  * @param config 要传入的定制的eslint配置
  */
 async function defineEslintConfig(config: FlatConfig[] = []) {
-  const configs: FlatConfigPromie[] = [command(), prettier(), typescript(), ignores(), ...config]
+  const configs: FlatConfigPromie[] = [
+    command(),
+    prettier(),
+    typescript(),
+    ignores(),
+    importEslintConfig(),
+    vue(),
+    javasript(),
+    jsonc(),
+    ...config
+  ]
 
   const resolved = await Promise.all(configs)
 

@@ -1,4 +1,4 @@
-// 集成prettier
+// prettier eslint
 import type { Linter } from 'eslint'
 
 import { resolveDefault } from '../util'
