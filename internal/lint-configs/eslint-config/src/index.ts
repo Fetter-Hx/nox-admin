@@ -2,11 +2,11 @@ import type { Linter } from 'eslint'
 import {
   command,
   prettier,
-  typescript,
   ignores,
   importEslintConfig,
   vue,
   javasript,
+  typescript,
   jsonc
 } from './configs'
 
@@ -26,13 +26,13 @@ type FlatConfigPromie = FlatConfig | FlatConfig[] | Promise<FlatConfig | FlatCon
  */
 async function defineEslintConfig(config: FlatConfig[] = []) {
   const configs: FlatConfigPromie[] = [
-    command(),
-    prettier(),
-    typescript(),
-    ignores(),
-    importEslintConfig(),
     vue(),
     javasript(),
+    command(),
+    prettier(),
+    ignores(),
+    importEslintConfig(),
+    typescript(),
     jsonc(),
     ...config
   ]
