@@ -4,6 +4,9 @@
       "mode": "auto"
     }
   ],
+  // workbench
+  "workbench.editor.highlightModifiedTabs": true,
+
   // 控制相关文件嵌套展示
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -35,7 +38,7 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -59,6 +62,17 @@
     "jsonc",
     "json5"
   ],
+
+  // stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.packageManager": "pnpm",
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "html"],
+  "stylelint.snippet": ["css", "less", "postcss", "scss", "vue", "html"],
+
+  // files
   "files.exclude": {
     "**/*.eslintcache": true,
     "**/.git": true,
@@ -67,5 +81,6 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true
-  }
+  },
+  "stylelint.reportNeedlessDisables": true
 }
