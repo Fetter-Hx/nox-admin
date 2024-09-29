@@ -1,3 +1,12 @@
+/*
+ * @Author: HX
+ * @Date: 2024-09-12 16:03:10
+ * @LastEditors: HX
+ * @LastEditTime: 2024-09-29 14:57:37
+ * @FilePath: \nox-monorepo\internal\lint-configs\eslint-config\src\configs\typescript.ts
+ * @Description:
+ *
+ */
 /** typescript eslint */
 import type { Linter } from 'eslint'
 
@@ -53,8 +62,14 @@ export async function typescript(): Promise<Linter.Config[]> {
           }
         ],
         '@typescript-eslint/no-use-before-define': 'off',
-        '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/no-var-requires': 'off',
         'unused-imports/no-unused-vars': 'off'
+      }
+    },
+    {
+      files: ['**/*.cjs'],
+      rules: {
+        '@typescript-eslint/no-require-imports': 'off'
       }
     }
   ]
