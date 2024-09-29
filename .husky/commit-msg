@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+echo Start running commit-msg git hook...
+
+pnpm exec commitlint --edit $1
+
+echo Run commit-msg git hook successfully.

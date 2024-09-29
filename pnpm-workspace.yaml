@@ -3,3 +3,5 @@ packages:
   - "packages/*"
   - "internal/*"
   - "internal/lint-configs/*"
+catalog:
+  'czg': ^1.9.4

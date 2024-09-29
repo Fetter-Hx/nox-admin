@@ -1,0 +1,19 @@
+{
+  "name": "@nox/commitlint-config",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "19.5.0",
+    "@commitlint/config-conventional": "19.5.0",
+    "@nox/node-utils": "workspace:*",
+    "commitlint-plugin-function-rules": "4.0.0",
+    "czg": "catalog:"
+  }
+}
