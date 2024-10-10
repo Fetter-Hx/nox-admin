@@ -1,0 +1,16 @@
+{
+  "name": "@nox/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "ISC",
+  "files": [
+    "base.json",
+    "node.json",
+    "web.json",
+    "web-app.json"
+  ],
+  "devDependencies": {
+    "vite": "^5.3.1"
+  }
+}
