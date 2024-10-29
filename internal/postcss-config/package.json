@@ -1,0 +1,35 @@
+{
+  "name": "@nox/postcss-config",
+  "version": "1.0.0",
+  "private": true,
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "stub": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./tailwind": {
+      "types": "./dist/tailwind.config.d.ts",
+      "import": "./dist/tailwind.config.mjs",
+      "require": "./dist/tailwind.config.cjs"
+    }
+  },
+  "peerDependencies": {
+    "tailwindcss": "3.4.14"
+  },
+  "dependencies": {
+    "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
+    "autoprefixer": "10.4.20",
+    "cssnano": "7.0.6",
+    "postcss": "8.4.47",
+    "postcss-import": "16.1.0"
+  }
+}
