@@ -1,3 +1,12 @@
+/*
+ * @Author: HX
+ * @Date: 2024-09-18 11:41:46
+ * @LastEditors: HX
+ * @LastEditTime: 2024-10-29 11:03:49
+ * @FilePath: \nox-monorepo\internal\lint-configs\stylelint-config\index.mjs
+ * @Description:
+ *
+ */
 /** @type {import('stylelint').Config} */
 
 export default {
@@ -81,6 +90,12 @@ export default {
       }
     ],
     'media-feature-range-notation': null, // 关闭媒体查询的范围符号规则
-    'scss/operator-no-newline-after': null // 关闭禁止运算符后换行
+    'scss/operator-no-newline-after': null, // 关闭禁止运算符后换行
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'] // 忽略tailwind的规则
+      }
+    ]
   }
 }
