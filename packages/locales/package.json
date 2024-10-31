@@ -1,0 +1,19 @@
+{
+  "name": "@nox/locales",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@intlify/core-base": "10.0.4",
+    "vue": "catalog:",
+    "vue-i18n": "10.0.4"
+  }
+}
