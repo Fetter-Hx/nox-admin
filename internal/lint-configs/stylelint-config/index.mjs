@@ -2,7 +2,7 @@
  * @Author: HX
  * @Date: 2024-09-18 11:41:46
  * @LastEditors: HX
- * @LastEditTime: 2024-10-29 11:03:49
+ * @LastEditTime: 2024-11-07 16:13:16
  * @FilePath: \nox-monorepo\internal\lint-configs\stylelint-config\index.mjs
  * @Description:
  *
@@ -96,6 +96,7 @@ export default {
       {
         ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'] // 忽略tailwind的规则
       }
-    ]
+    ],
+    'custom-property-empty-line-before': null // 关闭自定义属性前禁止空行
   }
 }
