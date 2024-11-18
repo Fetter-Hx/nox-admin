@@ -1,0 +1,29 @@
+{
+  "name": "@nox-core/shadcn-ui",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@nox-core/icons": "workspace:*",
+    "@nox-core/shared": "workspace:*",
+    "@radix-icons/vue": "1.0.0",
+    "@vee-validate/zod": "4.14.7",
+    "@vueuse/core": "11.2.0",
+    "class-variance-authority": "0.7.0",
+    "radix-vue": "1.9.8",
+    "tailwindcss-animate": "1.0.7",
+    "vee-validate": "4.14.7",
+    "vue": "catalog:",
+    "zod": "3.23.8"
+  }
+}

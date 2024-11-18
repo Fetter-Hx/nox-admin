@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@nox/tsconfig/web.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "paths": {
+      "@nox-core/shadcn-ui/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
