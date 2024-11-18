@@ -9,6 +9,7 @@ import {
   typescript,
   jsonc
 } from './configs'
+import { customConfig } from './custom-config'
 
 /**
  * eslint配置对象的类型
@@ -34,6 +35,7 @@ async function defineEslintConfig(config: FlatConfig[] = []) {
     importEslintConfig(),
     typescript(),
     jsonc(),
+    ...customConfig,
     ...config
   ]
 
