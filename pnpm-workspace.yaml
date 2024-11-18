@@ -1,7 +1,11 @@
 packages:
   - "apps/*"
   - "packages/*"
+  - "packages/@core/base/*"
+  - "packages/@core/ui-kit/*"
+  - "packages/effects/*"
   - "internal/*"
   - "internal/lint-configs/*"
 catalog:
-  'czg': ^1.9.4
+  czg: ^1.9.4
+  vue: ^3.5.12

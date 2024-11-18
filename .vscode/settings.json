@@ -4,6 +4,10 @@
       "mode": "auto"
     }
   ],
+
+  "tailwindCSS.experimental.configFile": "internal/postcss-config/src/tailwind.config.ts",
+  "tailwindCSS.experimental.classRegex": [["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
+
   // workbench
   "workbench.editor.highlightModifiedTabs": true,
 
@@ -17,7 +21,7 @@
     "README.md": "README*,CHANGELOG*,LICENSE,CNAME",
     "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,.gitattributes,.gitignore,.gitpod.yml,.npmrc,.browserslistrc,.node-version,.git*,.tazerc.json",
     "Dockerfile": "Dockerfile,.docker*,docker-entrypoint.sh,build-local-docker*,nginx.conf",
-    "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,prettier.config.*,stylelint.config.*,.lintstagedrc.mjs,lint-staged.config.*,cspell.json",
+    "eslint.config.mjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,prettier.config.*,stylelint.config.*,.lintstagedrc.mjs,lint-staged.config.*,commitlint.config.*,cspell.json",
     "tailwind.config.mjs": "postcss.*"
   },
   "editor.formatOnSave": true,
@@ -82,5 +86,17 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
-  "stylelint.reportNeedlessDisables": true
+  "stylelint.reportNeedlessDisables": true,
+
+  // i18n allay
+
+  "i18n-ally.localesPaths": ["packages/locales/src/langs", "apps/*/src/locales/langs"],
+  "i18n-ally.pathMatcher": "{locale}/{namespace}.{ext}",
+  "i18n-ally.enabledParsers": ["json"],
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.displayLanguage": "zh-CN",
+  "i18n-ally.enabledFrameworks": ["vue", "react"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.namespace": true
 }
