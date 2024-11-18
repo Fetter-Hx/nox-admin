@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply box-border border-0 border-solid;
+  }
+
+  html {
+    @apply bg-background text-foreground;
+
+    font-variation-settings: normal;
+    line-height: 1.2;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    text-rendering: optimizelegibility; /** 浏览器在绘制文本时将着重考虑易读性，而不是渲染速度和几何精度 */
+  }
+
+  html,
+  body,
+  #app {
+    @apply size-full overscroll-none;
+  }
+
+  a,
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    @apply no-underline;
+  }
+}
+
+@layer components {
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+}

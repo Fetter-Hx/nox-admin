@@ -1,0 +1,23 @@
+:root {
+  /** 默认背景色 */
+  --background: 0 0% 100%;
+  --background-deep: 240 38% 94%;
+
+  /* 默认前景色 */
+  --foreground: 210 6% 21%;
+
+  /** 默认边框色 */
+  --border: 240 6% 90%;
+
+  /** 主题色 */
+  --primary: 212 100% 45%;
+  --primary-foreground: 0 0% 98%;
+
+  /** 破坏性操作 */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  /** 强调色 */
+  --accent: 240 5% 96%;
+  --accent-foreground: 210 6% 21%;
+}

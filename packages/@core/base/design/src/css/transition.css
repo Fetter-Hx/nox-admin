@@ -1,0 +1,12 @@
+/** Transition内置组件使用的CSS动画 */
+
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.slide-right-enter-from,
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translate(15px);
+}
