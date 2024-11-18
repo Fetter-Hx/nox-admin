@@ -1,0 +1,20 @@
+{
+  "name": "@nox-core/icons",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "ISC",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@iconify/vue": "4.1.2",
+    "lucide-vue-next": "0.454.0",
+    "vue": "catalog:"
+  }
+}
