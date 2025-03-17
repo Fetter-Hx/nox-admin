@@ -1,0 +1,12 @@
+{
+  "name": "@nox/constants",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "license": "ISC"
+}
