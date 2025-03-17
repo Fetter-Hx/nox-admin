@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <div :class="cn('space-y-2', props.class)">
+  <div :class="cn(props.class)">
     <slot></slot>
   </div>
 </template>
