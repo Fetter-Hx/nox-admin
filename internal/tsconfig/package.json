@@ -12,7 +12,7 @@
     "library.json"
   ],
   "devDependencies": {
-    "vite": "^5.3.1"
+    "vite": "catalog:"
   },
   "dependencies": {
     "@nox/types": "workspace:*"

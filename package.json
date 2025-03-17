@@ -21,17 +21,18 @@
     "@nox/stylelint-config": "workspace:*",
     "@nox/tsconfig": "workspace:*",
     "@nox/vite-config": "workspace:*",
-    "@types/node": "^20.14.5",
-    "husky": "9.1.6",
-    "lint-staged": "15.2.10",
-    "prettier": "3.3.3",
-    "turbo": "^2.1.1",
-    "typescript": "^5.6.3",
-    "unbuild": "2.0.0",
-    "vite": "^5.3.1",
-    "vue-tsc": "^2.1.6"
+    "@types/node": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "ts-node": "10.9.2",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vite": "catalog:",
+    "vue-tsc": "catalog:"
   },
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
