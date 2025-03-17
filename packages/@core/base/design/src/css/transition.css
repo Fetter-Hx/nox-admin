@@ -10,3 +10,14 @@
   opacity: 0;
   transform: translate(15px);
 }
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-15px);
+}
