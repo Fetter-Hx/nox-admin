@@ -1,0 +1,16 @@
+{
+  "name": "@nox/layouts",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "vue": "catalog:"
+  }
+}
