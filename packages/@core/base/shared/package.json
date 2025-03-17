@@ -1,0 +1,39 @@
+{
+  "name": "@nox-core/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm unbuild",
+    "stub": "pnpm unbuild --stub"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./utils": {
+      "types": "./src/utils/index.ts",
+      "development": "./src/utils/index.ts",
+      "default": "./dist/utils/index.mjs"
+    },
+    "./store": {
+      "types": "./src/store.ts",
+      "development": "./src/store.ts",
+      "default": "./src/store.ts"
+    },
+    "./global-state": {
+      "types": "./src/global-state.ts",
+      "development": "./src/global-state.ts",
+      "default": "./src/global-state.ts"
+    }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@tanstack/vue-store": "catalog:",
+    "@types/lodash": "catalog:",
+    "@vue/shared": "catalog:",
+    "clsx": "catalog:",
+    "defu": "catalog:",
+    "lodash": "catalog:",
+    "tailwind-merge": "catalog:"
+  }
+}
